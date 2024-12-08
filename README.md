@@ -1,2 +1,2 @@
 # AmazonDataExtractor
-Tool for extracting Amazon titles, bullet points, and descriptions via ASINs.
+Extracts Amazon titles, bullet points, and descriptions via ASINs.
