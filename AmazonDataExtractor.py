@@ -15,7 +15,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 # Author: bigtajine
-# Filename: amazonDataCrawler.py
+# Filename: AmazonDataExtractor.py
 # Last Modified: 2024-11-19
 
 # Suppress logging
@@ -125,10 +125,10 @@ def process_html_files(output_folder, asins_file, countries, progress_var):
         df.to_excel(country_output_file, index=False)
         print(f'Processing complete for {country_code}. Output saved to', country_output_file)
 # Tkinter GUI
-class AmazonDataCrawlerApp(tk.Tk):
+class AmazonDataExtractorApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Amazon Data Crawler")
+        self.title("AmazonDataExtractor")
         self.geometry("400x600")
         self.configure(bg="#E0FFFF")  # Pastel blue background
 
@@ -208,5 +208,5 @@ class AmazonDataCrawlerApp(tk.Tk):
         messagebox.showinfo("Success", "Processing complete!")
 
 if __name__ == "__main__":
-    app = AmazonDataCrawlerApp()
+    app = AmazonDataExtractorApp()
     app.mainloop()
